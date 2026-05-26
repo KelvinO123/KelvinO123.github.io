@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="aiBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#aiBg)"/>
+  <g transform="translate(60,40)">
+    <rect x="0" y="0" width="280" height="140" rx="10" fill="#0b1220" stroke="#60a5fa"/>
+    <line x1="0" y1="28" x2="280" y2="28" stroke="#60a5fa"/>
+    <circle cx="16" cy="14" r="4" fill="#ef4444"/>
+    <circle cx="32" cy="14" r="4" fill="#f59e0b"/>
+    <circle cx="48" cy="14" r="4" fill="#22c55e"/>
+    <g fill="#94a3b8">
+      <rect x="20" y="46" width="240" height="6" rx="2"/>
+      <rect x="20" y="60" width="200" height="6" rx="2"/>
+      <rect x="20" y="74" width="220" height="6" rx="2"/>
+      <rect x="20" y="88" width="160" height="6" rx="2"/>
+    </g>
+    <rect x="20" y="106" width="100" height="24" rx="4" fill="#22c55e"/>
+    <text x="70" y="123" font-family="Lato, Arial" font-size="12" text-anchor="middle" fill="#052e16" font-weight="700">HUMAN 78%</text>
+    <rect x="160" y="106" width="100" height="24" rx="4" fill="#ef4444"/>
+    <text x="210" y="123" font-family="Lato, Arial" font-size="12" text-anchor="middle" fill="#450a0a" font-weight="700">AI 22%</text>
+  </g>
+  <text x="200" y="220" font-family="Lato, Arial" font-size="14" text-anchor="middle" fill="#bfdbfe" font-weight="700" letter-spacing="2">AI TEXT GUARD</text>
+</svg>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FPGA Elevator Controller — Kelvin O'Young</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-title">Kelvin O'Young</a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects-timeline">Projects</a>
+        <a href="mailto:koyoun1@lsu.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>FPGA Elevator Controller</h1>
+      <p class="meta">Digital Logic 2 · 2025</p>
+      <div class="tags">
+        <span class="tag">Verilog</span>
+        <span class="tag">FPGA</span>
+        <span class="tag">Moore FSM</span>
+        <span class="tag">XDC Constraints</span>
+        <span class="tag">Embedded</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="project-body">
+    <figure>
+      <img src="../assets/images/projects/fpga-elevator.svg" alt="FPGA Elevator FSM diagram placeholder" />
+      <figcaption>State diagram for the 3-story elevator controller.</figcaption>
+    </figure>
+
+    <h2>Overview</h2>
+    <p>
+      A <strong>Verilog-based elevator controller</strong> targeting an FPGA development
+      board, implementing a <strong>Moore Finite State Machine</strong> that dynamically
+      services a 3-story elevator. The design handles concurrent floor requests, fault
+      conditions, and door-cycle timing.
+    </p>
+
+    <h2>Architecture</h2>
+    <ul>
+      <li>
+        Moore FSM with a <strong>9-state loop</strong> covering idle, ascending, descending,
+        door-opening, door-open, door-closing, and safety/fault states.
+      </li>
+      <li>
+        Direction-selection logic that prioritizes the closest pending request to minimize
+        passenger wait time.
+      </li>
+      <li>
+        Built-in <strong>safety faults</strong> that lock the FSM into a recoverable hold
+        state until the fault clears, modeling real-world emergency behavior.
+      </li>
+      <li>
+        I/O fully constrained via <strong>XDC files</strong> mapping the FSM outputs to
+        physical board LEDs and inputs to buttons + clock.
+      </li>
+    </ul>
+
+    <h2>Validation</h2>
+    <p>
+      Simulated each state transition under combinations of concurrent requests, then
+      validated on the FPGA board with LED status indicators for floor position, door
+      state, and fault flags.
+    </p>
+
+    <h2>What I Learned</h2>
+    <p>
+      How quickly a "simple" state machine grows when real safety behavior is added.
+      Thinking carefully about which states are <em>holding</em> states versus
+      <em>transient</em> states made the design much easier to debug.
+    </p>
+
+    <a href="../index.html#projects-timeline" class="back-link">← Back to projects</a>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kelvin O'Young.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/header-particles.js" defer></script>
+</body>
+</html>

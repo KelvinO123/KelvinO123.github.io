@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMS Protection Board — Kelvin O'Young</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-title">Kelvin O'Young</a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects-timeline">Projects</a>
+        <a href="mailto:koyoun1@lsu.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>BMS Protection Board</h1>
+      <p class="meta">TigerRacing Formula SAE · 2025</p>
+      <div class="tags">
+        <span class="tag">KiCAD</span>
+        <span class="tag">LTspice</span>
+        <span class="tag">Battery Management</span>
+        <span class="tag">High-Density Layout</span>
+        <span class="tag">Manufacturing</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="project-body">
+    <figure>
+      <img src="../assets/images/projects/bms-board.svg" alt="BMS Protection Board placeholder" />
+      <figcaption>Illustration of the 84-cell BMS monitoring board.</figcaption>
+    </figure>
+
+    <h2>Overview</h2>
+    <p>
+      The BMS Protection Board is a <strong>compact, fuse-integrated low-voltage board</strong>
+      that isolates and safely monitors all <strong>84 cell-level connections</strong> coming
+      off the EV's battery pack. It's the protective layer between an accumulator full of
+      energy and the rest of the car's sensitive electronics.
+    </p>
+
+    <h2>Design Highlights</h2>
+    <ul>
+      <li>
+        Routed and simulated the protection network to ensure every one of the 84 BMS lines
+        is isolated through its own fuse path before reaching the management IC.
+      </li>
+      <li>
+        Optimized board size aggressively — the harness count keeps growing while the
+        physical envelope inside the car keeps shrinking.
+      </li>
+      <li>
+        Used <strong>1812 metric footprints</strong> and consolidated solder points to cut
+        per-board assembly time, which adds up fast across <strong>200+ boards</strong>.
+      </li>
+      <li>
+        Validated against an LTspice model of the protection network to confirm correct
+        behavior under expected fault scenarios.
+      </li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>
+      The board lets the BMS reliably see each cell while protecting downstream electronics
+      from a stuck cell, shorted tap, or other failure mode. It also dropped manufacturing
+      time considerably, which matters when the team produces them in volume.
+    </p>
+
+    <h2>What I Learned</h2>
+    <p>
+      Real-world PCB design is a balance between electrical correctness, physical
+      constraints, and manufacturability. Designing for the soldering iron as much as the
+      simulator was a key takeaway.
+    </p>
+
+    <a href="../index.html#projects-timeline" class="back-link">← Back to projects</a>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kelvin O'Young.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/header-particles.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage - Kelvin O'Young</title>
+  <meta name="description" content="Personal website of Kelvin O'Young — Electrical Engineering Honors student at Louisiana State University." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-title">Kelvin O'Young</a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#projects-timeline">Projects</a>
+        <a href="mailto:koyoun1@lsu.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <!-- Left sidebar: profile -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="assets/images/profile.svg" alt="Kelvin O'Young" class="profile-photo" />
+        <h1 class="profile-name">Kelvin O'Young</h1>
+        <p class="profile-tagline">
+          B.S. Electrical Engineering (Honors)<br />
+          Louisiana State University
+        </p>
+        <p class="profile-roles">
+          Aspiring Hardware &amp; Electronics Engineer<br />
+          Researcher · Maker · Student
+        </p>
+        <p class="profile-address">
+          Baton Rouge, Louisiana, USA
+        </p>
+        <ul class="profile-links">
+          <li>
+            <a href="mailto:koyoun1@lsu.edu" title="Email">
+              <span class="icon" aria-hidden="true">✉</span> koyoun1@lsu.edu
+            </a>
+          </li>
+          <li>
+            <a href="tel:+13188404146" title="Phone">
+              <span class="icon" aria-hidden="true">☎</span> (318) 840-4146
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/KelvinO123" target="_blank" rel="noopener" title="GitHub">
+              <span class="icon" aria-hidden="true">⌥</span> GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Right content -->
+    <section class="content">
+      <!-- Short Bio -->
+      <article class="block" id="bio">
+        <h2 class="block-title">Short-bio</h2>
+        <p>
+          Hi, I am <strong>Kelvin O'Young</strong>, an Electrical Engineering Honors
+          undergraduate at <strong>Louisiana State University</strong>, with minors in
+          Computer Engineering and Robotics Engineering. I am pursuing a B.S. with an
+          expected graduation in May 2028 and currently hold a 4.02 GPA.
+        </p>
+        <p>
+          My work spans biomedical instrumentation, embedded electronics, and PCB design.
+          I am a Research Assistant in the Biomedical Engineering Device Lab developing a
+          handheld AI-powered deep-tissue cancer detection probe, and a Powertrain Team
+          member on <strong>TigerRacing Formula SAE</strong>, where I design safety and
+          monitoring PCBs for a Formula-style electric racing vehicle.
+        </p>
+        <p>
+          I am passionate about turning circuit ideas into real, manufacturable hardware —
+          from op-amp fault detectors and battery-management protection boards to FPGA-driven
+          state machines. Feel free to reach out if you'd like to collaborate or chat about
+          electronics, robotics, or research.
+        </p>
+      </article>
+
+      <!-- Education -->
+      <article class="block" id="education">
+        <h2 class="block-title">Education</h2>
+
+        <div class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">Louisiana State University</h3>
+            <p class="entry-sub">
+              B.S. in Electrical Engineering (Honors) — Minors in Computer Engineering and Robotics Engineering<br />
+              College of Engineering · GPA: <strong>4.02</strong>
+            </p>
+            <p class="entry-detail">
+              Relevant coursework: Circuits 2, Electronics 1, Digital Logic 2,
+              Electromagnetism, Differential Equations.
+            </p>
+          </div>
+          <div class="entry-date">Aug 2024 – May 2028 (expected)</div>
+        </div>
+      </article>
+
+      <!-- Experience -->
+      <article class="block" id="experience">
+        <h2 class="block-title">Experience</h2>
+
+        <div class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">Biomedical Engineering Device Lab — LSU</h3>
+            <p class="entry-sub">Research Assistant</p>
+            <ul class="entry-bullets">
+              <li>
+                Developing a handheld, AI-powered deep-tissue cancer detection probe;
+                designing the physical housing and ergonomics in Fusion 360 to ensure a
+                secure, fatigue-free grip.
+              </li>
+              <li>
+                Leading mechanical design with 5 other lab members and integrating a
+                one-touch activation mechanism for streamlined cancer-tissue diagnostics.
+              </li>
+              <li>
+                Coordinating mechanical and electronic integration by designing sensor
+                housings for precise alignment and reliable performance.
+              </li>
+              <li>
+                Conducted prototype testing with user-simulation trials to optimize
+                handheld ergonomics and reduce operator fatigue.
+              </li>
+            </ul>
+          </div>
+          <div class="entry-date">Aug 2025 – Present</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">TigerRacing Formula SAE — LSU</h3>
+            <p class="entry-sub">Powertrain Team Member</p>
+            <ul class="entry-bullets">
+              <li>
+                Assisted with design and implementation of the electrical system of a
+                Formula-style EV — testing/assembling the battery pack and integrating
+                multiple PCBs.
+              </li>
+              <li>
+                Designed an Offset PCB in KiCAD and LTspice to detect power cutoffs across
+                the car's electrical system for fault detection.
+              </li>
+              <li>
+                Developed a compact, fuse-integrated PCB enabling safe, reliable monitoring
+                of 84-cell BMS lines.
+              </li>
+              <li>
+                Conducted breadboard validation on the Brake Sensor Plausibility Device
+                PCB and Fault Latch PCB against LTspice models.
+              </li>
+            </ul>
+          </div>
+          <div class="entry-date">Aug 2025 – Present</div>
+        </div>
+      </article>
+
+      <!-- Skills -->
+      <article class="block" id="skills">
+        <h2 class="block-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Hardware &amp; EDA</h4>
+            <ul class="skill-list">
+              <li>KiCAD</li>
+              <li>LTspice</li>
+              <li>Fusion 360 CAD</li>
+              <li>Circuit Simulation &amp; Design</li>
+              <li>PCB Layout &amp; Validation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <ul class="skill-list">
+              <li>Verilog (FPGA)</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML / CSS / JavaScript</li>
+              <li>React Native</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Other</h4>
+            <ul class="skill-list">
+              <li>Microsoft Office Suite</li>
+              <li>Breadboarding &amp; Prototyping</li>
+              <li>Technical Documentation</li>
+              <li>Team Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Honors & Awards -->
+      <article class="block" id="honors">
+        <h2 class="block-title">Honors &amp; Awards</h2>
+        <ul class="news-list">
+          <li><span class="date">2025–2026.</span> President's List, Louisiana State University.</li>
+          <li><span class="date">2024–2025.</span> Dean's List, Louisiana State University.</li>
+          <li><span class="date">2024.</span> AP Scholar with Distinction, College Board.</li>
+          <li><span class="date">2024.</span> AP Capstone Diploma, College Board.</li>
+        </ul>
+      </article>
+
+      <!-- Interests -->
+      <article class="block" id="interests">
+        <h2 class="block-title">Interests</h2>
+        <p>
+          Electronics · Robotics · Reading Fiction · Calisthenics
+        </p>
+      </article>
+
+      <!-- Projects Timeline -->
+      <article class="block" id="projects-timeline">
+        <h2 class="block-title">Projects Timeline</h2>
+        <p class="timeline-intro">
+          A chronological look at the hardware, firmware, and software projects I've worked on.
+          Click any project to read the full write-up.
+        </p>
+
+        <ol class="timeline">
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/cancer-detection-probe.html" class="timeline-card">
+                <img src="assets/images/projects/cancer-probe.svg" alt="Cancer Detection Probe" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">Aug 2025 – Present</span>
+                  <h3 class="timeline-title">AI-Powered Cancer Detection Probe</h3>
+                  <p class="timeline-desc">
+                    Handheld deep-tissue cancer detection device with one-touch activation,
+                    ergonomic Fusion 360 housing, and integrated sensor alignment.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/offset-pcb.html" class="timeline-card">
+                <img src="assets/images/projects/offset-pcb.svg" alt="Offset PCB" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">2025</span>
+                  <h3 class="timeline-title">Offset Printed Circuit Board</h3>
+                  <p class="timeline-desc">
+                    Op-amp voltage detection circuit that monitors signals at critical
+                    nodes and flags disconnected or failed wires.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/bms-protection-board.html" class="timeline-card">
+                <img src="assets/images/projects/bms-board.svg" alt="BMS Protection Board" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">2025</span>
+                  <h3 class="timeline-title">BMS Protection Board</h3>
+                  <p class="timeline-desc">
+                    Compact low-voltage protection board that isolates and safely monitors
+                    84 battery-cell BMS connections for a Formula SAE EV.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/fpga-elevator.html" class="timeline-card">
+                <img src="assets/images/projects/fpga-elevator.svg" alt="FPGA Elevator Controller" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">2025</span>
+                  <h3 class="timeline-title">FPGA Elevator Controller</h3>
+                  <p class="timeline-desc">
+                    Verilog Moore FSM controlling a 3-story elevator with 9-state logic
+                    for concurrent requests, safety faults, and door operation.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/ai-text-guard.html" class="timeline-card">
+                <img src="assets/images/projects/ai-text-guard.svg" alt="AI Text Guard" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">2024</span>
+                  <h3 class="timeline-title">AI Text Guard</h3>
+                  <p class="timeline-desc">
+                    Web tool that detects AI-generated content using OCR transcription
+                    and three independent AI-detection APIs for an authenticity score.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <a href="projects/food-guesser.html" class="timeline-card">
+                <img src="assets/images/projects/food-guesser.svg" alt="FoodGuesser" class="timeline-img" />
+                <div class="timeline-body">
+                  <span class="timeline-date">2024</span>
+                  <h3 class="timeline-title">FoodGuesser</h3>
+                  <p class="timeline-desc">
+                    A browser game challenging players to identify the nationality of
+                    randomly displayed foods, powered by a food data API and scoring system.
+                  </p>
+                  <span class="timeline-link">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kelvin O'Young. Built with HTML, CSS, and a little bit of caffeine.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/header-particles.js" defer></script>
+</body>
+</html>

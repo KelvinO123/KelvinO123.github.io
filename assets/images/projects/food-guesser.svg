@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="fgBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#fgBg)"/>
+  <!-- plate -->
+  <circle cx="200" cy="120" r="80" fill="#fff" stroke="#92400e" stroke-width="3"/>
+  <circle cx="200" cy="120" r="68" fill="#fef9c3"/>
+  <!-- sushi piece -->
+  <ellipse cx="180" cy="110" rx="32" ry="14" fill="#fde68a" stroke="#92400e" stroke-width="2"/>
+  <rect x="160" y="100" width="40" height="8" rx="3" fill="#ef4444" stroke="#7f1d1d"/>
+  <rect x="190" y="120" width="30" height="20" rx="4" fill="#22c55e" stroke="#14532d"/>
+  <!-- question mark -->
+  <text x="250" y="100" font-family="Lato, Arial" font-size="60" text-anchor="middle" fill="#7c2d12" font-weight="700">?</text>
+  <!-- title -->
+  <text x="200" y="230" font-family="Lato, Arial" font-size="16" text-anchor="middle" fill="#7c2d12" font-weight="700" letter-spacing="2">FOODGUESSER</text>
+</svg>

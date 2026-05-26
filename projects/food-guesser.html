@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodGuesser — Kelvin O'Young</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-title">Kelvin O'Young</a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects-timeline">Projects</a>
+        <a href="mailto:koyoun1@lsu.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>FoodGuesser</h1>
+      <p class="meta">Personal Project · 2024</p>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">CSS</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Browser Game</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="project-body">
+    <figure>
+      <img src="../assets/images/projects/food-guesser.svg" alt="FoodGuesser screenshot placeholder" />
+      <figcaption>Stylized version of the FoodGuesser game card.</figcaption>
+    </figure>
+
+    <h2>Overview</h2>
+    <p>
+      <strong>FoodGuesser</strong> is a lightweight browser game in which players are
+      shown a randomly selected dish and have to guess <strong>which country it comes
+      from</strong>. It's a fun way to learn a bit of food geography, and a great excuse to
+      practice clean, vanilla front-end code.
+    </p>
+
+    <h2>What's Inside</h2>
+    <ul>
+      <li>
+        <strong>Food data API</strong> integration to pull random dishes along with their
+        country of origin and an image.
+      </li>
+      <li>
+        A scoring system that rewards streaks and tracks the player's best run.
+      </li>
+      <li>
+        Responsive HTML/CSS layout so it plays nicely on phone or desktop.
+      </li>
+      <li>
+        Plain JavaScript — no frameworks — keeping the build simple and fast to load.
+      </li>
+    </ul>
+
+    <h2>Why It Was Fun</h2>
+    <p>
+      Small, self-contained game projects are a great sandbox: they force you to think
+      about state, animation, error handling (what if the API hiccups?), and player
+      feedback, all in a few hundred lines of code.
+    </p>
+
+    <h2>What I Learned</h2>
+    <p>
+      Working with an external REST API, handling asynchronous loading states gracefully,
+      and designing a simple game loop that still feels responsive and rewarding.
+    </p>
+
+    <a href="../index.html#projects-timeline" class="back-link">← Back to projects</a>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kelvin O'Young.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/header-particles.js" defer></script>
+</body>
+</html>

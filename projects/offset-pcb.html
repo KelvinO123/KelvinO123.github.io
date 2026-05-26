@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offset Printed Circuit Board — Kelvin O'Young</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-title">Kelvin O'Young</a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects-timeline">Projects</a>
+        <a href="mailto:koyoun1@lsu.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>Offset Printed Circuit Board</h1>
+      <p class="meta">TigerRacing Formula SAE · 2025</p>
+      <div class="tags">
+        <span class="tag">KiCAD</span>
+        <span class="tag">LTspice</span>
+        <span class="tag">Analog Design</span>
+        <span class="tag">Op-Amps</span>
+        <span class="tag">Fault Detection</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="project-body">
+    <figure>
+      <img src="../assets/images/projects/offset-pcb.svg" alt="Offset PCB schematic placeholder" />
+      <figcaption>Stylized layout of the Offset PCB's signal-monitoring nodes.</figcaption>
+    </figure>
+
+    <h2>Overview</h2>
+    <p>
+      The Offset PCB is an <strong>op-amp-based voltage detection circuit</strong> built to
+      monitor signal integrity at critical nodes in our Formula SAE EV's electrical system.
+      The board lets the team know — in real time — whether a wire is disconnected, shorted,
+      or otherwise misbehaving, before a fault propagates into more sensitive electronics.
+    </p>
+
+    <h2>Design Process</h2>
+    <ul>
+      <li>
+        Modeled the op-amp comparator network in <strong>LTspice</strong> to validate the
+        offset threshold before committing to a layout.
+      </li>
+      <li>
+        Identified op-amp output voltage errors during simulation, traced them to bias
+        resistor selection, and tuned the network until results matched expected ranges.
+      </li>
+      <li>
+        Implemented fault-detection logic so an end user can tell at a glance whether a
+        monitored wire is connected, disconnected, or has failed.
+      </li>
+      <li>
+        Routed the board in <strong>KiCAD</strong>, optimizing for clear signal paths and
+        easy probing during validation.
+      </li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>
+      The board now sits in the powertrain's fault-monitoring chain and gives the team a
+      fast, debuggable interface for catching wiring issues in a vehicle whose harness has
+      hundreds of nodes.
+    </p>
+
+    <h2>What I Learned</h2>
+    <p>
+      Closing the loop between simulation and hardware: spending the extra hour in LTspice
+      consistently saves a full day of bench debugging later. I also got more comfortable
+      reading op-amp datasheets critically rather than just trusting nominal numbers.
+    </p>
+
+    <a href="../index.html#projects-timeline" class="back-link">← Back to projects</a>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kelvin O'Young.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/header-particles.js" defer></script>
+</body>
+</html>
